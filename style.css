@@ -193,6 +193,7 @@ article div {
     }
     .note--section{
         flex-direction: column;
+        padding: 2rem;
     }
     .cards{
         grid-template-columns: repeat(2, 1fr);
@@ -205,6 +206,9 @@ article div {
     }
     .article--btn{
         margin-bottom: 4rem;
+    }
+    form input{
+        margin-bottom: 2rem;
     }
 }
 /* @media (max-width: 480px) {
