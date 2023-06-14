@@ -64,6 +64,7 @@ nav {
 }
 .nav--icon{
     display: flex;
+    padding-left: 2.5rem;
 }
 .logo--text{
     margin-left: 0.8rem;
@@ -144,7 +145,7 @@ article div {
     background-color: var(--secundario);
     padding: 5rem;
     border-radius: 0.8rem;
-    margin-bottom: 10%;
+    margin-bottom: 10rem;
 }
 .card--article{
     background-color: var(--blanco);
@@ -184,4 +185,28 @@ article div {
 .text--card{
     padding: 5rem 1rem;
     color: #000;
+}
+/* responsivo */
+@media (max-width: 768px) {
+    .video--section {
+        flex-direction: column;
+    }
+    .note--section{
+        flex-direction: column;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card--article{
+        margin-top: 5rem;
+    }
+    video{
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .cards {
+            grid-template-columns: 1fr;
+        }
+    
 }
